@@ -34,7 +34,11 @@ function init(args){
     });
 
     t.add(Ti.UI.createLabel({
-      color: "#000",
+      font: {
+        fontSize: args.tabFontSize,
+        fontFamily: args.tabFontFamily
+      },
+      color: args.tabColor,
       text: args.titles[i]
     }));
 

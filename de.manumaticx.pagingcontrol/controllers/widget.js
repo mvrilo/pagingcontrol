@@ -4,7 +4,10 @@ var args = arguments[0] || {};
 _.defaults(args, {
     indicatorColor: "#000",
     indicatorHeight: 5,
+    dividerColor: "#ccc",
     tabs: false,
+    tabFontSize: 14,
+    tabColor: "#000",
     scrollOffset: 40,
     height: args.tabs ? 48 : 5,
     width: Ti.UI.FILL
@@ -13,7 +16,7 @@ _.defaults(args, {
 // additional adjustments for tabs
 if (args.tabs) {
     args.tabs = {
-      dividerColor: "#ccc",
+      dividerColor: args.dividerColor,
       width: args.tabWidth
     };
 }
