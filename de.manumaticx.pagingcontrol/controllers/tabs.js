@@ -35,10 +35,10 @@ function init(args){
 
     t.add(Ti.UI.createLabel({
       font: {
-        fontSize: args.tabFontSize,
-        fontFamily: args.tabFontFamily
+        fontSize: args.tabs.fontSize,
+        fontFamily: args.tabs.fontFamily
       },
-      color: args.tabColor,
+      color: args.tabs.color,
       text: args.titles[i]
     }));
 

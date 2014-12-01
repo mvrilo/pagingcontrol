@@ -17,7 +17,10 @@ _.defaults(args, {
 if (args.tabs) {
     args.tabs = {
       dividerColor: args.dividerColor,
-      width: args.tabWidth
+      width: args.tabWidth,
+      fontFamily: args.tabFontFamily,
+      fontSize: args.tabFontSize,
+      color: args.tabColor
     };
 }
 
