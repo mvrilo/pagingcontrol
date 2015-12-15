@@ -61,6 +61,7 @@ function init(args){
 
     var label = Ti.UI.createLabel({
       color: (i === 0 && args.tabs.activeColor) ? args.tabs.activeColor : args.tabs.color,
+      font: args.font,
       text: args.titles[i]
     });
     labels.push(label);
